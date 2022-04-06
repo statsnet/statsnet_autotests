@@ -1,0 +1,11 @@
+{
+    "baseUrl": "http://localhost:8080/",
+    "pageLoadTimeout": 10000,
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 5000,
+    "viewportHeight": 1080,
+    "viewportWidth": 1920,
+    "video": false,
+    "videoCompression": false,
+    "retries": 0
+}
