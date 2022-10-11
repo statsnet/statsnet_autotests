@@ -1,11 +1,14 @@
 {
-    "baseUrl": "http://localhost:8080/",
-    "pageLoadTimeout": 10000,
+    "baseUrl": "http://x-next.statsnet.co",
+    "pageLoadTimeout": 100000,
     "chromeWebSecurity": false,
-    "defaultCommandTimeout": 5000,
+    "defaultCommandTimeout": 500000,
     "viewportHeight": 1080,
     "viewportWidth": 1920,
     "video": false,
     "videoCompression": false,
-    "retries": 0
+    "retries": 0,
+    "env": {
+        "sitemapUrls": "http://x-next.statsnet.co/sitemap/sitemap_1.xml"
+    }
 }

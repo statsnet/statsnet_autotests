@@ -1,15 +1,24 @@
 {
   "dependencies": {
-    "cypress": "^9.5.2"
+    "cypress": "^9.5.2",
+    "cypress-each": "^1.11.0",
+    "got": "^12.5.1",
+    "x2js": "^3.4.3"
   },
   "name": "cypress",
   "version": "1.0.0",
   "description": "Cypress Framework",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "triggerSignUpFrontendTests": "npx cypress run --spec cypress/integration/sign-up.spec.js",
+    "triggerGeneralSitemapTests": "npx cypress run --spec cypress/integration/general-sitemap.spec.js",
+    "triggerSingleSitemapTests": "npx cypress run --spec cypress/integration/single-sitemap.spec.js",
+    "triggerStatsnetFrontendTests": "npx cypress run --spec cypress/integration/statsnet.spec.js"
   },
   "author": "Vlad",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.5.0"
+  }
 }

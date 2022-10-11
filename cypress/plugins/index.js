@@ -1,22 +1,18 @@
-/// <reference types="cypress" />
-// ***********************************************************
-// This example plugins/index.js can be used to load plugins
-//
-// You can change the location of this file or turn off loading
-// the plugins file with the 'pluginsFile' configuration option.
-//
-// You can read more here:
-// https://on.cypress.io/plugins-guide
-// ***********************************************************
+/// <reference types="Cypress" />
 
-// This function is called when a project is opened or re-opened (e.g. due to
-// the project's config changing)
+// const got = require('got')
+// // use https://github.com/abdolence/x2js to parse XML to JSON
+// const X2JS = require('x2js')
 
-/**
- * @type {Cypress.PluginConfig}
- */
-// eslint-disable-next-line no-unused-vars
-module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
+module.exports = async (on, config) => {
+  // const sitemapUrl = `${config.baseUrl}/sitemap/sitemap_1.xml`
+  // const xml = await got(sitemapUrl).text()
+  // const x2js = new X2JS()
+  // const json = x2js.xml2js(xml)
+  // const urls = json.urlset.url.map((url) => url.loc)
+  // console.log(urls)
+
+  // config.env.sitemapUrls = urls
+  // // make sure to return the changed config
+  // return config
 }
