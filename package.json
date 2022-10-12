@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "triggerSignUpFrontendTests": "npx cypress run --group 1x-chrome --record --headless --browser chrome --spec cypress/integration/sign-up.spec.js",
-    "triggerGeneralSitemapTests": "npx cypress run --headless --spec cypress/integration/general-sitemap.spec.js",
+    "triggerGeneralSitemapTests": "npx cypress run --spec cypress/integration/general-sitemap.spec.js",
     "triggerSingleSitemapTests": "npx cypress run --headless --spec cypress/integration/single-sitemap.spec.js",
     "triggerStatsnetFrontendTests": "npx cypress run --headless --spec cypress/integration/statsnet.spec.js"
   },
