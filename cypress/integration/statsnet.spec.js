@@ -38,7 +38,7 @@ describe('Verify step', () => {
         homePage.selectUserRoom()
     })
 
-    it.only('Verify premium plan', () => {
+    it('Verify premium plan', () => {
         beforeLoginPage.clickLogin()
         loginPage.typeDataIntoFieldsAndlogin(data.email, data.password);
         homePage.selectPremiumPlan()
