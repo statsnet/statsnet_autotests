@@ -34,7 +34,7 @@ class SignUpPage {
     verifySignUpSuccess() {
         cy.wait(5000)
         cy.url().should('eq', 
-            'https://x-next.statsnet.co/me')
+            'https://x-next.statsnet.co/')
     }
 
     clickSignUp() {
