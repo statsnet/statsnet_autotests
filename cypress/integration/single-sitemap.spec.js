@@ -42,7 +42,17 @@ before(() => {
     });
 });
 
-it('should succesfully load each url in the sitemap VISIT', () => {
+it('should succesfully load each url in the 1 sitemap VISIT', () => {
+  for (let index = 0; index < 100; index++) {
+    const element = urls[index];
+    cy.visit(element)
+    // cy.contains('Полный отчёт').should('be.visible')
+  }
+  // urls.forEach(cy.visit);
+  
+});
+
+it('should succesfully load each url in the 2 sitemap VISIT', () => {
   for (let index = 0; index < 100; index++) {
     const element = urls[index];
     cy.visit(element)
