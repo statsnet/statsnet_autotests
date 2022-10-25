@@ -20,6 +20,12 @@ class HomePage {
         cy.get(data.premiumPlan).should('be.visible').click()
         cy.contains('Оформление подписки Premium').should('be.visible')
     }
+
+    clickPay() {
+        cy.contains('Оплатить картой').should('be.visible').click()
+        cy.wait(5000)
+        cy.contains('Сохранить карту на этом сайте').should('be.visible')
+    }
    
 }
 

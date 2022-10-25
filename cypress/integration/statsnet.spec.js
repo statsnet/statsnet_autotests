@@ -42,6 +42,7 @@ describe('Verify step', () => {
         beforeLoginPage.clickLogin()
         loginPage.typeDataIntoFieldsAndlogin(data.email, data.password);
         homePage.selectPremiumPlan()
+        homePage.clickPay()
     })
 
 })
